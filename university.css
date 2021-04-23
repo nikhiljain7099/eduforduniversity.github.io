@@ -1,0 +1,689 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(../eduford_img/banner.png);
+    background-size: cover;
+    height: 120vh;
+}
+.container .navbar{
+    display: flex;
+    align-items: center;
+}
+.container li{
+    display: inline;
+    margin: 1.5vw;
+}
+
+.navbar a{
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+.navbar a:hover{
+    background-color:#e05200;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+.container nav{
+    justify-self: flex-end;
+    margin-left: auto;
+    margin-right: 5vw;
+}
+.container img{
+    cursor: pointer;
+    margin-top: 3vh;
+    margin-left: 4vw;
+    height: 90px;
+    width: 270px;
+}
+.container-2{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-2 .content{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+}
+.container-2 h1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 600;
+    margin-bottom: 4vh;
+}
+.container-2 p{
+    margin-top: 1vh;
+    margin-bottom: 7vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+}
+.container-2 a{
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    margin-bottom: 10vh;
+    padding: 10px 40px ;
+    border: 1px solid white;
+    border-radius: 2px;
+    transition: 1s;
+}
+.container-2 a:hover{
+    text-decoration: none;
+    background-color: #e05200;
+}
+@media only screen and (max-width: 1504px){
+    .container-2 h1{
+        font-size: 70px ;
+    }
+}
+@media only screen and (max-width: 1315px){
+    .container-2 h1{
+        font-size: 50px ;
+    }
+}
+@media only screen and (max-width: 767px){
+    .navbar{
+        flex-direction: column;
+    }
+    ul{
+        margin-top: 2vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* SECTION-B */
+.container-3{
+    margin-top: 15vh;
+    color: black;
+    height: 60vh;
+}
+.container-3 h1{
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.container-3 p{
+    text-align: center;
+    margin-bottom: 8vh;
+}
+.container-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-5{
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-2,.content-3,.content-4{
+    background-color: rgb(250, 227, 231);
+    width: 27vw;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.content-2:hover,.content-3:hover,.content-4:hover{
+    box-shadow: 1px 1px 7px rgb(63, 62, 62);
+}
+.container-5 h3{
+    text-align: center;
+    padding: 10px 0px;
+}
+.container-5 p{
+    font-size: 15px;
+    text-align: center;
+}
+@media only screen and (max-width: 1000px){
+    .container-5{
+        flex-direction: column;
+    }
+    .content-2,.content-3,.content-4{
+        width: 90vw;
+        margin: 5vh;
+    }
+}
+
+/* Global Campus */
+
+/* --------IMAGES TRANSITION------ */
+  .images .content {
+  position: relative;
+  width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .images .content .content-overlay {
+  background: rgba(256,0,0,0.5);
+  position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .images .content:hover .content-overlay{
+    opacity: 1;
+  }
+  .images .content-image{
+    width: 100%;
+  }
+  .images .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .images .content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  } 
+  .images .content-details h3{
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+
+  .images .fadeIn-bottom{
+    top: 80%;
+}
+
+
+  /* -------CHANGES IN  THIS IMAGES------ */
+.campus{
+    margin: 0;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.campus h1{
+    margin-bottom: 2vh;
+}
+.campus p{
+    margin-bottom: 10vh;
+}
+
+.campus-2{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.campus-3{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+.images{
+    width: 120vw;
+}
+@media only screen and (max-width: 1101px){
+    .campus{
+        position: relative;
+        top: 10vh; 
+    }
+}
+@media only screen and (max-width: 1005px){
+    .campus{
+        position: relative;
+        top: 70vh; 
+    }
+}
+@media only screen and (max-width: 816px){
+    .campus{
+        position: relative;
+        top: 90vh; 
+    }
+}
+@media only screen and (max-width: 450px){
+    .campus{
+        position: relative;
+        top: 110vh; 
+    }
+    .campus h1{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .campus p{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .campus-3{
+        flex-direction: column;
+    }
+    div.images{
+        width: 100vw;
+        margin-bottom: 10vh;
+    }
+}
+@media only screen and (max-width: 345px){
+    .campus{
+        position: relative;
+        top: 150vh; 
+    }
+    .campus h1{
+        font-size: 28px;
+    }
+    .campus p{
+        font-size: 13px;
+    }
+}
+
+
+
+/* ---------SEC-D(NEW-SECTION)----------- */
+/* ---------SEC-D(NEW-SECTION)----------- */
+/* ---------SEC-D(NEW-SECTION)----------- */
+.facilities{
+    color: black;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+.facilities h1{
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.facilities .header{
+    text-align: center;
+    margin-bottom: 10vh;
+}
+.facilities-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facilities-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90vw;
+}
+.info{
+    width: 28vw;
+}
+.info img{
+    width: 28vw;
+    border-radius: 10px;
+}
+.info h3{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+
+@media only screen and (max-width: 1101px){
+    .facilities{
+        position: relative;
+        top: 10vh; 
+    }
+}
+@media only screen and (max-width: 1005px){
+    .facilities{
+        position: relative;
+        top: 70vh; 
+    }
+    
+}
+@media only screen and (max-width: 816px){
+    .facilities{
+        position: relative;
+        top: 90vh; 
+    }
+    .facilities-3{
+        flex-direction: column;
+    }
+    .info{
+        width: 90vw;
+    }
+    .info img{
+        width: 90vw;
+        margin-bottom: 10vh;
+        margin: 0;
+    }
+    .info h3,.info p{
+        width: 90vw;
+        text-align: center;
+    }
+    .info p{
+        margin-bottom: 10vh;
+    }
+}
+@media only screen and (max-width: 450px){
+    .facilities{
+        position: relative;
+        top: 110vh; 
+    }
+    .facilities h1{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .info h3,.info p{
+        width: 90vw;
+        text-align: center;
+    }
+    .info p{
+        margin-bottom: 10vh;
+    }
+}
+@media only screen and (max-width: 345px){
+    .facilities{
+        position: relative;
+        top: 150vh; 
+    }
+    .facilities h1{
+        font-size: 28px;
+    }
+    .facilities p{
+        font-size: 13px;
+    }
+}
+
+/* -------REVIEWS------ */
+/* -------REVIEWS------ */
+/* -------REVIEWS------ */
+.review{
+    color: black;
+}
+.review h1{
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.review .header{
+    text-align: center;
+    margin-bottom: 10vh;
+}
+.review-2{
+    display: flex;
+    justify-content: space-around;
+}
+.stars{
+    color: black;
+    width: 40vw;
+}
+.stars h3{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.stars i{
+    color: orange;
+}
+.review-3 img,.review-4 img{
+    width: 3vw;
+    height: 5vh;
+    clip-path: circle(49.2% at 50% 50%);
+    margin-right: 2vw;
+}
+.review-3,.review-4{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(255, 224, 229);
+    width: 40vw;
+    padding: 10px 20px ;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 1101px){
+    .review{
+        position: relative;
+        top: 10vh; 
+    }
+}
+@media only screen and (max-width: 1005px){
+    .review{
+        position: relative;
+        top: 70vh; 
+    }
+    .review-2{
+        flex-direction: column;
+    }
+    .review-3,.review-4{
+        width: 90vw;
+        margin-top: 3vh;
+        margin-left: 4vw;
+    }
+    .stars{
+        width: 90vw;
+    }
+    .review img{
+        width: 5vw;
+        height: 4vh;
+    }
+    
+}
+@media only screen and (max-width: 816px){
+    .review{
+        position: relative;
+        top: 90vh; 
+    }
+    .review-3,.review-4{
+        width: 90vw;
+        margin-top: 3vh;
+        margin-left: 2vw;
+    }   
+    .stars{
+        width: 90vw;
+    }
+    .review img{
+        width: 6vw;
+        height: 4vh;
+    }
+}
+@media only screen and (max-width: 450px){
+    .review{
+        position: relative;
+        top: 110vh; 
+    }
+    .review h1{
+        font-size: 20px;
+    }
+    .review-3,.review-4{
+        width: 90vw;
+        margin-top: 3vh;
+        margin-left: 4vw;
+    }
+    .review .header{
+        font-size: 13px;
+    }
+    .review img{
+        width: 8vw;
+        height: 4vh;
+    }
+   
+}
+@media only screen and (max-width: 345px){
+    .review{
+        position: relative;
+        top: 150vh; 
+    }
+    .review img{
+        width: 10vw;
+        height: 4vh;
+    }
+}
+
+
+/* ------Contact Us------- */
+/* ------Contact Us------- */
+/* ------Contact Us------- */
+
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contact .content{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/eduford_img/banner2.jpg);
+    background-size: cover;
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+.contact .header{
+    margin-top: 13vh;
+    width: 50vw;
+    text-align: center;
+}
+.contact h1{
+    margin-bottom: 5vh;
+}
+.contact a{
+    border: 1px solid white;
+    padding: 5px 20px;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+    border-radius: 2px;
+}
+.contact a:hover{
+    background-color: #e05200;
+}
+
+@media only screen and (max-width: 1101px){
+    .contact{
+        position: relative;
+        top: 10vh; 
+    }
+}
+@media only screen and (max-width: 1005px){
+    .contact{
+        position: relative;
+        top: 70vh; 
+    }
+}
+@media only screen and (max-width: 816px){
+    .contact{
+        position: relative;
+        top: 90vh; 
+    }
+    .contact h1{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .contact{
+        position: relative;
+        top: 110vh; 
+    }
+    .contact h1{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 345px){
+    .contact{
+        position: relative;
+        top: 150vh; 
+    }
+}
+
+
+/* ------FOOTER----- */
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    color: black;
+    text-align: center;
+    width: 50vw;
+
+}
+footer h3,p,.social{
+    margin-bottom: 5vh;
+}
+.social-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social{
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+}
+.social i{
+    color: #e05200;
+    padding:10px 10px;
+    border-radius: 3px;
+    transition: 1s;
+}
+.social i:hover{
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+}
+
+
+@media only screen and (max-width: 1101px){
+    footer{
+        position: relative;
+        top: 10vh; 
+    }
+}
+@media only screen and (max-width: 1005px){
+    footer{
+        position: relative;
+        top: 70vh; 
+    }
+}
+@media only screen and (max-width: 816px){
+    footer{
+        position: relative;
+        top: 90vh; 
+    }
+    .footer{
+        width: 90vw;
+    }
+}
+@media only screen and (max-width: 450px){
+    footer{
+        position: relative;
+        top: 110vh; 
+    }
+}
+@media only screen and (max-width: 345px){
+    footer{
+        position: relative;
+        top: 150vh; 
+    }
+}
